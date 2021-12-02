@@ -53,10 +53,23 @@ concatName(arr1);
 concatName(arr2);
 concatName(arr3);
 
+
+
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let vitorias = wins * 3;
+  let empates = ties;
+
+  let resultado = vitorias + empates;
+
+  return resultado;
+  
 }
+
+footballPoints(14, 8);
+footballPoints(1, 2);
+footballPoints(0, 0);
 
 // Desafio 6
 function highestCount() {
