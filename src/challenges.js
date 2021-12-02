@@ -75,7 +75,6 @@ footballPoints(0, 0);
 function highestCount(array) {
   let maior = array[0];
   let cont = 0;
-  let negativos = [];
   for(let i = 0; i < array.length; i += 1){
     if(array[i] > maior){
       maior = array[i];
@@ -127,9 +126,30 @@ catAndMouse(0, 6, 12);
 catAndMouse(0, 3, 3);
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  let x = array;
+  for(let i = 0; i < array.length; i += 1){
+    
+    if(array[i] % 3 === 0 && array[i] % 5 === 0){
+      
+      array[i] = "fizzBuzz";
+
+      } else if(array[i] % 3 === 0){
+        
+        array[i] = "fizz";
+
+      } else if(array[i] % 5 === 0){
+        
+        array[i] = "buzz";
+
+      } else if (array[i] % 3 !== 0 || array[i] % 5 !==0){
+      
+        array[i] = "bug!";
+   }
+  }
+    return x;
 }
+
 
 // Desafio 9
 function encode() {
