@@ -9,9 +9,15 @@ function compareTrue(p1, p2) {
 
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, heigth) {
+  let area = (base * heigth)/2;
+  return area;
 }
+
+calcArea(10, 50);
+calcArea(5 , 2);
+calcArea(51, 1);
+
 
 // Desafio 3
 function splitSentence() {
