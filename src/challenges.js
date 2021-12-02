@@ -101,9 +101,30 @@ highestCount(a);
 highestCount(z);
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let gato1 = cat1 - mouse;
+  let gato2 = cat2 - mouse;
+
+  if(mouse > cat1){
+    gato1 = mouse - cat1;
+  }
+  if(mouse > cat2){
+    gato2 = mouse - cat2;
+  }
+
+
+  if(gato1 > gato2){
+    return "cat2";
+  }else if (gato1 < gato2){
+    return "cat1"
+  }else if (gato1 === gato2){
+    return "os gatos trombam e o rato foge";
+  }
 }
+
+catAndMouse(0, 3, 2);
+catAndMouse(0, 6, 12);
+catAndMouse(0, 3, 3);
 
 // Desafio 8
 function fizzBuzz() {
