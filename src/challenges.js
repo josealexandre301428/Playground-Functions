@@ -32,10 +32,26 @@ splitSentence('vamo que vamo');
 
 splitSentence('foguete');
 
+
+
+
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let primeiro = array[0];
+  let ultimo = array[array.length - 1];
+
+  let resultado = ultimo + ', ' + primeiro;
+  
+  return resultado;
 }
+
+let arr1 = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+let arr2 = ['foguete', 'não', 'tem', 'ré'];
+let arr3 = ['captain', 'my', 'captain'];
+
+concatName(arr1);
+concatName(arr2);
+concatName(arr3);
 
 // Desafio 5
 function footballPoints() {
