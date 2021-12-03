@@ -145,17 +145,45 @@ function fizzBuzz(array) {
       } else if (array[i] % 3 !== 0 || array[i] % 5 !==0){
       
         array[i] = "bug!";
-   }
+    }
   }
     return x;
 }
 
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+// Desafio 9 João Paulo e Daniel Saraiva da tribo B auxiliaram a encontrar o metodo split e join.
+function encode(string) {
+  let resultado = [];
+  resultado = string.split("");
+  
+  for(let i = 0; i < resultado.length; i += 1){
+    if(resultado[i] == 'a'){
+      resultado[i] = '1';
+    }
+    if(resultado[i] === 'e'){
+      resultado[i] = '2';
+    }
+    if(resultado[i] === 'i'){
+      resultado[i] = '3';
+    }
+    if(resultado[i] === 'o'){
+      resultado[i] = '4';
+    }
+    if(resultado[i] === 'u'){
+      resultado[i] = '5';
+    }
+  }
+  
+  let encodeFrase = resultado.join('');
+  return encodeFrase;
 }
-function decode() {
+
+console.log(encode("hi there!"));
+
+  
+  
+
+function decode(string) {
   // seu código aqui
 }
 
