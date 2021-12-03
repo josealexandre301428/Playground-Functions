@@ -178,13 +178,36 @@ function encode(string) {
   return encodeFrase;
 }
 
-console.log(encode("hi there!"));
+
 
   
   
 
 function decode(string) {
-  // seu código aqui
+  let resultado = [];
+  resultado = string.split("");
+  
+  for(let i = 0; i < resultado.length; i += 1){
+    if(resultado[i] == '1'){
+      resultado[i] = 'a';
+    }
+    if(resultado[i] === '2'){
+      resultado[i] = 'e';
+    }
+    if(resultado[i] === '3'){
+      resultado[i] = 'i';
+    }
+    if(resultado[i] === '4'){
+      resultado[i] = 'o';
+    }
+    if(resultado[i] === '5'){
+      resultado[i] = 'u';
+    }
+  }
+  
+  let dencodeFrase = resultado.join('');
+  return dencodeFrase;
+
 }
 
 module.exports = {
